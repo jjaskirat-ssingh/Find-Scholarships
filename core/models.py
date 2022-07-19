@@ -19,7 +19,7 @@ class Scholarship(models.Model):
     application_open = models.DateTimeField(blank=True)
     application_deadline = models.DateTimeField(blank=True)
     type = models.ManyToManyField(Type)
-    reviewed = models.BooleanField(default=False)
-
+    # reviewed = models.BooleanField(default=False)
+    
     def __str__(self):
         return self.title
